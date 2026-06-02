@@ -23,11 +23,25 @@ Capstone at Humber College in partnership with Kevares Inc., Canada.
 
 ---
 
+## 📸 Real-World Blurring Output — YOLOv5l (Best Model)
+
+Face detected and blurred from sidewalk robot camera:
+
+![Face Blurring Output](blurring_output_1.png)
+
+License plate detected and blurred in real street footage:
+
+![Number Plate Blurring Output](blurring_output_2.png)
+
+---
+
 ## 🛠 What We Built
 - Annotated dataset using **CVAT** (Computer Vision Annotation Tool)
 - Trained and compared **YOLOv5s, YOLOv5l, YOLOv9c** models
-- Applied blurring filters to anonymize detected regions
-- Evaluated models using Precision, Recall, F1 Score, mAP50
+- Applied blurring filters to anonymize detected regions in 
+  real-time video feeds from autonomous robots
+- Evaluated all models using Precision, Recall, F1 Score, 
+  mAP50 and Accuracy
 
 ---
 
@@ -36,18 +50,32 @@ Capstone at Humber College in partnership with Kevares Inc., Canada.
 | Model | Precision | Recall | F1 Score | mAP50 | Accuracy |
 |-------|-----------|--------|----------|-------|----------|
 | YOLOv5s | 87.3% | 76.8% | 81.7% | 82.8% | 69.1% |
-| **YOLOv5l** ⭐ | **90.6%** | **86.5%** | **88.5%** | **87.5%** | **79.4%** |
+| **YOLOv5l ⭐** | **90.6%** | **86.5%** | **88.5%** | **87.5%** | **79.4%** |
 | YOLOv9c | 89.5% | 71.3% | 79.4% | 79.9% | 65.8% |
 | YOLOv9c (Tuned) | 87.2% | 68.4% | 76.7% | 75.1% | 62.2% |
 
-**⭐ Best Model: YOLOv5l**
-- 200 epochs · Batch size 24 · Image size 640×640
-- Outperformed the newer YOLOv9c architecture
+**⭐ Best Model: YOLOv5l — 200 epochs · Batch 24 · Image 640×640**
+
+---
+
+## 📈 Model Result Screenshots
+
+### YOLOv5l — Best Model (Precision 90.6%)
+![YOLOv5l Results](YOLOv5l_Result.png)
+
+### YOLOv5s — Baseline
+![YOLOv5s Results](YOLOv5s_Result.png)
+
+### YOLOv9c
+![YOLOv9c Results](YOLOv9c_Result.png)
+
+### YOLOv9c — Hypertuned
+![YOLOv9c Hypertuned Results](YOLOv9c_hypertuned_Result.png)
 
 ---
 
 ## 💡 Key Learnings
-- YOLOv5l outperformed newer YOLOv9c — more epochs + 
+- YOLOv5l outperformed newer YOLOv9c — more epochs and 
   larger batch size improved recall significantly
 - Hyperparameter tuning alone does not guarantee better results
 - Real-world data annotation using CVAT was the most 
@@ -57,6 +85,7 @@ Capstone at Humber College in partnership with Kevares Inc., Canada.
 ---
 
 ## 🔧 Tech Stack
+
 | Category | Tools |
 |---|---|
 | Language | Python |
@@ -69,8 +98,8 @@ Capstone at Humber College in partnership with Kevares Inc., Canada.
 ---
 
 ## 👥 Team
-Capstone team of 5 students — Humber College  
-AI & Machine Learning Graduate Certificate Program (2024)  
+Capstone team of 5 students — Humber College
+AI & Machine Learning Graduate Certificate Program (2024)
 Industry Sponsor: **Kevares Inc.**, Oshawa, Ontario, Canada
 
 ---
